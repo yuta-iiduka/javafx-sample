@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 
 <BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
    <center>
-      <Pane prefHeight="215.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <Pane prefHeight="310.0" prefWidth="500.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="ClickBtn" layoutX="74.0" layoutY="189.0" mnemonicParsing="false" onAction="#onClickBtnClicked" text="Button" />
+            <Button fx:id="ClickBtn" layoutX="74.0" layoutY="284.0" mnemonicParsing="false" onAction="#onClickBtnClicked" text="Button" />
             <Label fx:id="lbl" layoutY="77.0" prefHeight="112.0" prefWidth="200.0" text="Label" />
             <Label fx:id="title" layoutY="7.0" prefHeight="63.0" prefWidth="200.0" text="Label" />
+            <ImageView fx:id="imagev" fitHeight="86.0" fitWidth="200.0" layoutY="189.0" pickOnBounds="true" preserveRatio="true" />
+            <DatePicker fx:id="datepicker" layoutX="263.0" layoutY="26.0" prefHeight="25.0" prefWidth="218.0" />
+            <Label fx:id="datelist" layoutX="263.0" layoutY="70.0" prefHeight="63.0" prefWidth="200.0" text="Label" />
          </children>
       </Pane>
    </center>
