@@ -41,13 +41,14 @@ public class SampleController {
     
     @FXML
     public void onClickBtnClicked(ActionEvent event) {
+    	//LocalDate -> String
     	LocalDate localDate = datepicker.getValue();
     	String date = localDate.format(DateTimeFormatter.ofPattern("yyyy/MM/dd"));
     	lbl.setText("Hello JavaFx!");
     	datelist.setText(date);
+    	//Load Image
     	Image image = new Image("sample01.jpg");
     	imagev.setImage(image);
-    	
     	
     }
     
